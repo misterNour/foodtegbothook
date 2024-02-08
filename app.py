@@ -11,8 +11,8 @@ app = Flask(__name__)
 api_secret_key = 'test_sk_nu2KF22Dc60fD6LdkIoAwlp3WgfCj5rqn15atqeB'
 
 # URL of your Google Apps Script endpoint
-# google_apps_script_url = 'https://script.google.com/macros/s/AKfycbwT_caEFY2AZJHpyzviLNm0KJVEGtK35qA7fVWecXq9hslWj-fDwTcGMYfG0vfICyF3/exec'
-google_apps_script_url = 'https://webhook.site/c5c2c685-cef7-4778-aa26-fef9ae86761a'
+google_apps_script_url = 'https://script.google.com/macros/s/AKfycbwT_caEFY2AZJHpyzviLNm0KJVEGtK35qA7fVWecXq9hslWj-fDwTcGMYfG0vfICyF3/exec'
+
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
