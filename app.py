@@ -76,8 +76,8 @@ app = Flask(__name__)
 CORS(app)
 
 # Replace with your Google Apps Script web app URL
-GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwT_caEFY2AZJHpyzviLNm0KJVEGtK35qA7fVWecXq9hslWj-fDwTcGMYfG0vfICyF3/exec"
-
+GOOGLE_SCRIPT_URL = "https://webhook.site/c5c2c685-cef7-4778-aa26-fef9ae86761a"
+# https://script.google.com/macros/s/AKfycbwT_caEFY2AZJHpyzviLNm0KJVEGtK35qA7fVWecXq9hslWj-fDwTcGMYfG0vfICyF3/exec
 @app.route('/webhook', methods=['POST'])
 def webhook():
     data = request.json  # Assuming the incoming data is in JSON format
